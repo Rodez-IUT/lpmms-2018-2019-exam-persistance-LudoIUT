@@ -16,6 +16,9 @@ public class Project {
     private String title;
 
     private String description;
+    
+    @Version
+    private long version;
 
 
     @NotNull
@@ -56,4 +59,10 @@ public class Project {
     public void setEnterprise(Enterprise enterprise) {
         this.enterprise = enterprise;
     }
+
+	public long getVersion() {
+		return version;
+	}
+    
+    
 }
